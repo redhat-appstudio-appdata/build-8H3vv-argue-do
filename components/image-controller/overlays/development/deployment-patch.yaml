@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: image-controller
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtap-build-tenant/build/image-controller@sha256:afffd9a56cc134e42b6ff5ee222a2d4a15cc74ba7302421532d39422fca6cdfe
+        name: container-image
+        resources: {}
+status: {}
